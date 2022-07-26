@@ -1,5 +1,5 @@
 {% set name = "app-model" %}
-{% set version = "0.0.6" %}
+{% set version = "0.0.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2099f014856826e019675fa1a07e95031c88cbe7962bf0643a1204019226f7e6
+  sha256: 4d1b79a82539c6de63971defc3c63041caf0379333abcb67202b6b9bdbbc76bf
 
 build:
   noarch: python
