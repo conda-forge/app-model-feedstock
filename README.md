@@ -1,7 +1,7 @@
 About app-model
 ===============
 
-Home: https://github.com/napari/app-model
+Home: https://github.com/pyapp-kit/app-model
 
 Package license: BSD-3-Clause
 
@@ -9,7 +9,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/app-model-feeds
 
 Summary: Generic application schema implemented in python.
 
-Development: https://github.com/napari/app-model
+Development: https://github.com/pyapp-kit/app-model
 
 Documentation: https://app-model.readthedocs.io
 
