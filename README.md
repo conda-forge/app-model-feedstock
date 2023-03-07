@@ -1,11 +1,11 @@
-About app-model
-===============
+About app-model-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/app-model-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/pyapp-kit/app-model
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/app-model-feedstock/blob/main/LICENSE.txt)
 
 Summary: Generic application schema implemented in python.
 
