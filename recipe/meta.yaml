@@ -6,22 +6,22 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
   sha256: 3b2a0731c053a5e19a1447e222ff46212467cb3db0890ff7794ccf9079d33d31
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - hatchling
     - hatch-vcs
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - psygnal >=0.3.4
     - pydantic >=1.8
     - pydantic-compat >=0.1.1
@@ -33,6 +33,7 @@ test:
     - app_model
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
 
