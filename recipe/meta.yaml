@@ -1,13 +1,13 @@
 {% set name = "app-model" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 3b2a0731c053a5e19a1447e222ff46212467cb3db0890ff7794ccf9079d33d31
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: ccf667999f6c659e921ca3490b6da176971e67cf2f41abc34e33caa8cfa18573
 
 build:
   noarch: python
